@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta content="en-ie" http-equiv="Content-Language" />
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<title>College</title>
+		<script src=" http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    $("#aung").hide();
+    $("#kev").hide();
+    $("#bol").hide();
+    $("#cat").hide();
+    $("#mou").hide();
+    $("#rat").hide();
+
+    $("#community").change(function(){
+
+        if(this.value == 1){
+            $("#kev").hide();
+			$("#bol").hide();
+			$("#cat").hide();
+			$("#mou").hide();
+			$("#rat").hide();
+            $("#aung").show();
+        }
+        else if(this.value == 2){
+			$("#aung").hide();
+			$("#bol").hide();
+			$("#cat").hide();
+			$("#mou").hide();
+			$("#rat").hide();
+            $("#kev").show();
+        }
+		else if(this.value == 3){
+			$("#aung").hide();
+			$("#kev").hide();
+			$("#cat").hide();
+			$("#mou").hide();
+			$("#rat").hide();
+            $("#bol").show();
+        }
+		else if(this.value == 4){
+			$("#aung").hide();
+			$("#kev").hide();
+			$("#bol").hide();
+			$("#mou").hide();
+			$("#rat").hide();
+            $("#cat").show();
+        }
+		else if(this.value == 5){
+			$("#aung").hide();
+			$("#kev").hide();
+			$("#bol").hide();
+			$("#cat").hide();
+			$("#rat").hide();
+            $("#mou").show();
+        }
+		else if(this.value == 6){
+			$("#aung").hide();
+			$("#kev").hide();
+			$("#bol").hide();
+			$("#mou").hide();
+			$("#cat").hide();
+            $("#rat").show();
+        }
+        else{
+            $("#aung").show();
+			$("#bol").hide();
+            $("#kev").hide();
+			$("#cat").hide();
+			$("#mou").hide();
+			$("#rat").hide();
+        }
+
+    }).change();
+});
+
+</script>
+		<style type="text/css">
+		.auto-style1 {
+			border: 1px solid #D3E9EF;
+			background-color: #D3E9EF;
+		}
+		.auto-style2 {
+			text-align: center;
+			background-color: #000066;
+			border-top-left-radius: 20px;
+			border-bottom-right-radius: 20px;
+			font-size: large;
+		}
+		.auto-style7 {
+			text-align:center; 
+			align:center;
+		}
+		img#show
+		{ 
+			border:3px solid #D3E9EF;
+			border-radius: 20px / 20px ;
+			box-shadow:0px 0px 15px 5px #151515;
+		}
+		</style>
+	<link rel="stylesheet" type="text/css" href="header.css">
+	</head>
+	<body>
+		<div class="auto-style5" id="MainWrapper">
+		<div id="HeaderWrapper">
+				<div id="Header"> <!--  CONTAINER -->
+					<div id="LogoDiv"> <!-- DIT LOGO IMAGE LINK -->
+						<a href="http://www.dit.ie">
+							<img id="DITLogo" src="DITLOGO.png"> </img>
+						</a>
+					</div> <!--End of LogoDiv-->
+					<div id="LinkWrapper">
+						<div id="TopLinksWrapper">
+							<table id="TopLinks"background="DITNAVBAR.png">
+								<tr>
+									<td id="FirstCell">
+										<li><span><a href="http://www.dit.ie">Home</a></span></li>
+									</td>
+									<td>
+										<li><span><a href="http://www.dit.ie/about">About DIT</a></span></li>
+									</td>
+									<td >
+										<li><span><a href="http://www.dit.ie/tools/locations">Find DIT</a></span></li>
+									</td>
+									<td>
+										<li><span><a href="http://www.dit.ie/news">News & Events</a></span></li>
+									</td>
+									<td>
+										<li><span><a href="http://www.dit.ie/tools/contacts">Staff Contacts</a></span></li>
+									</td>
+									<td>
+										<li><span><a href="http://www.dit.ie/tools/map">Sitemap</a></span></li>
+									</td>
+									<td>
+										<li><span><a href="http://www.dit.ie/tools/help">Help</a></span></li>
+									</td>
+									<td>
+										<li><span><a href="http://www.dit.ie/tools/disclaimer/privacy">Privacy Statement</a></span></li>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div id="SearchBarWrapper">
+							<a href="http://www.dit.ie">
+								<img id="LogoText" src="DITLOGONAME.png"></img>
+							</a>
+							<div id="SearchBar">
+								<form>
+									<table id="SearchTable">
+										<tr>
+											<td colspan="2">
+												<select id="SelectInput" name="InfoFor">
+													<option value="default" selected>Information for...</option>
+													<option value="gradNetwork">Graduate Network</option>
+													<option value="prospectiveStudents">Prospective Students</option>
+													<option value="currentStudents">Current Students</option>
+													<option value="jobApplicants">Job Applicants</option>
+													<option value="media">Media</option>
+													<option value="staff">Staff</option>
+													<option value="friendsDonors">Friends And Donors</option>
+												</select>
+											</td>
+										</tr>
+										<td>
+											<input type="text" name="search" size="15">
+										</td>
+										<td>
+											<input id="SearchSubmit" type="submit" name="submit" value="Search">
+										</td>
+									</table>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="NavBarWrapper">
+					<table id="NavBarTable" align="center">
+						<tr>
+							<td><a href = "http://www.dit.ie/study/">Study At DIT</a></td>
+							<td ><a href = "http://www.dit.ie/dita-z/">DIT A-Z</a></td>
+							<td ><a href = "http://www.dit.ie/colleges/">Colleges & Schools</a></td>
+							<td><a href = "library.html">Library</a></td>
+							<td><a href = "http://dit.ie/researchandenterprise/">Research & Enterprise</a></td>
+							<td><a href = "http://dit.ie/news/">News & Events</a></td>
+						</tr>
+					</table>
+				</div>
+		</div>
+			<div style="position:absolute; right:15%; background-color:white;" >
+				<div class="auto-style1" style="float:left; width:150px; height:350px; border-top-left-radius: 50px; border-bottom-right-radius: 50px;">
+					<div style="text-align:center">
+						<br /><br /><hr />
+						<a style="text-decoration:none" href="search.html">Search</a><hr />
+						<a style="text-decoration:none" href="papers.html">Exam Papers</a><hr />
+						<a style="text-decoration:none" href="printing.html">Printing</a><hr />
+						<a style="text-decoration:none" href="https://ditlib.dit.ie/patroninfo.html~S0">Login</a><hr />
+						<a style="text-decoration:none" href="http://www.dit.ie/lttc/webcourseslinks/">Webcourses</a><hr />
+						<a style="text-decoration:none" href="https://mymail.dit.ie">Student Email</a><hr />
+						<a style="text-decoration:none" href="hours.html">Opening Hours</a><hr />
+					</div><!--navigation-->
+		    	</div>
+				<div class=auto-style7 style="margin:auto;">
+					<div class="auto-style2" style="margin-left:210px; width:700px; height:30px;">
+						<select name="quantity" id="community" class="store-qty" data-inline="true">
+						  <option value="1">Aungier Street</option>
+						  <option value="2">Kevin Street</option>
+						  <option value="3">Bolton Street</option>
+						  <option value="4">Cathal Brugha</option>
+						  <option value="5">Mount Joy Square</option>
+						  <option value="6">Rathmines Road</option>
+						</select>
+					</div>
+					<p>
+					<div id="aung" >
+						<table align="center"style="width:700px;height:300px;"cellspacing="0">
+						<tr style="background-color:#84c8dd;">
+						  <th colspan="3">Aungier Street Opening Times</th></tr>
+						  <tr style="background-color:#d3e9ef;text-align:center; ">
+						  <td style="">Academic Year 2013 - 2014</td>		
+						  <td>16 Sep 2013 - 31 May 2014</td>
+						  <td>3 June 2013 - 12 Sep 2014</td>
+						  </tr>
+						  <tr style="background-color:#d3e9ef;text-align:center; ">
+						  <td>Monday - Thursday</td>		
+						  <td>09.00 - 21.00</td>
+						  <td>09.00 - 17.00</td>
+						  </tr>
+						  <tr style="background-color:#d3e9ef;text-align:center; ">
+						  <td>Friday</td>		
+						  <td>09.00 - 17.00</td>
+						  <td>09.00 - 17.00</td>
+						  </tr>
+						  <tr style="background-color:#d3e9ef;text-align:center; ">
+						  <td>Saturday</td>		
+						  <td>10.00 - 17.00</td>
+						  <td>Closed</td>
+						  </tr></table>
+					  </div>
+					<div id="kev">
+						<table align="center"style="width:700px;height:300px;"cellspacing="0">
+							<tr style="background-color:#84c8dd;">
+							  <th colspan="3">Kevin Street Opening Times</th></tr>
+							  <tr style="background-color:#d3e9ef;text-align:center; ">
+							  <td style="">Academic Year 2013 - 2014</td>		
+							  <td>16 Sep 2013 - 31 May 2014</td>
+							  <td>3 June 2013 - 12 Sep 2014</td>
+							  </tr>
+							  <tr style="background-color:#d3e9ef;text-align:center; ">
+							  <td>Monday - Thursday</td>		
+							  <td>09.00 - 21.30</td>
+							  <td>09.00 - 17.00</td>
+							  </tr>
+							  <tr style="background-color:#d3e9ef;text-align:center; ">
+							  <td>Friday</td>		
+							  <td>09.00 - 17.15</td>
+							  <td>09.00 - 17.15</td>
+							  </tr>
+							  <tr style="background-color:#d3e9ef;text-align:center; ">
+							  <td>Saturday</td>		
+							  <td>10.00 - 16.30</td>
+							  <td>Closed</td>
+							 </tr>
+							</table>
+					  </div>
+					<div id="bol">
+						<table align="center"style="width:700px;height:300px;"cellspacing="0">
+							<tr style="background-color:#84c8dd;">
+								<th colspan="3">Bolton Street Opening Times</th></tr>
+					  <tr style="background-color:#d3e9ef;text-align:center; ">
+					  <td style="">Academic Year 2013 - 2014</td>		
+					  <td>16 Sep 2013 - 31 May 2014</td>
+					  <td>3 June 2013 - 12 Sep 2014</td>
+					  </tr>
+					  <tr style="background-color:#d3e9ef;text-align:center; ">
+					  <td>Monday - Thursday</td>		
+					  <td>09.00 - 21.00</td>
+					  <td>09.30 - 17.15</td>
+					  </tr>
+					  <tr style="background-color:#d3e9ef;text-align:center; ">
+					  <td>Friday</td>		
+					  <td>09.00 - 17.00</td>
+					  <td>09.30 - 17.00</td>
+					  </tr>
+					  <tr style="background-color:#d3e9ef;text-align:center; ">
+					  <td>Saturday</td>		
+					  <td>10.00 - 17.00</td>
+					  <td>Closed</td>
+					  </tr>
+							</table>
+					  </div>
+					  <div id="cat">
+						<table align="center"style="width:700px;height:300px;"cellspacing="0">
+							<tr style="background-color:#84c8dd;">
+								<th colspan="3">Cathal Brugha Street Opening Times</th></tr>
+					  <tr style="background-color:#d3e9ef;text-align:center; ">
+					  <td style="">Academic Year 2013 - 2014</td>		
+					  <td>16 Sep 2013 - 31 May 2014</td>
+					  <td>3 June 2013 - 12 Sep 2014</td>
+					  </tr>
+					  <tr style="background-color:#d3e9ef;text-align:center; ">
+					  <td>Monday - Thursday</td>		
+					  <td>09.00 - 21.00</td>
+					  <td>09.30 - 17.15</td>
+					  </tr>
+					  <tr style="background-color:#d3e9ef;text-align:center; ">
+					  <td>Friday</td>		
+					  <td>09.00 - 17.00</td>
+					  <td>09.30 - 17.15</td>
+					  </tr>
+					  <tr style="background-color:#d3e9ef;text-align:center; ">
+					  <td>Saturday</td>		
+					  <td>10.00 - 17.00</td>
+					  <td>Closed</td>
+					  </tr>
+							</table>
+					  </div>
+					  <div id="mou">
+						<table align="center"style="width:700px;height:300px;"cellspacing="0">
+							<tr style="background-color:#84c8dd;">
+							   <th colspan="3">Mount Joy Square Opening Times</th></tr>
+					  <tr style="background-color:#d3e9ef;text-align:center; ">
+					  <td style="">Academic Year 2013 - 2014</td>		
+					  <td>16 Sep 2013 - 31 May 2014</td>
+					  <td>3 June 2013 - 12 Sep 2014</td>
+					  </tr>
+					  <tr style="background-color:#d3e9ef;text-align:center; ">
+					  <td>Monday - Thursday</td>		
+					  <td>09.30 - 21.30</td>
+					  <td>09.30 - 17.15</td>
+					  </tr>
+					  <tr style="background-color:#d3e9ef;text-align:center; ">
+					  <td>Friday</td>		
+					  <td>09.30 - 17.15</td>
+					  <td>09.30 - 17.15</td>
+					  </tr>
+					  <tr style="background-color:#d3e9ef;text-align:center; ">
+					  <td>Saturday</td>		
+					  <td>10.00 - 17.00</td>
+					  <td>Closed</td>
+					  </tr>
+							</table>
+					  </div>
+					 <div id="rat">
+						<table align="center"style="width:700px;height:300px;"cellspacing="0">
+							<tr style="background-color:#84c8dd;">
+					  <th colspan="3">Rathmines Road Opening Times</th></tr>
+					  <tr style="background-color:#d3e9ef;text-align:center; ">
+					  <td style="">Academic Year 2013 - 2014</td>		
+					  <td>16 Sep 2013 - 31 May 2014</td>
+					  <td>3 June 2013 - 12 Sep 2014</td>
+					  </tr>
+					  <tr style="background-color:#d3e9ef;text-align:center; ">
+					  <td>Monday - Thursday</td>		
+					  <td>09.30 - 21.30</td>
+					  <td>09.30 - 17.15</td>
+					  </tr>
+					  <tr style="background-color:#d3e9ef;text-align:center; ">
+					  <td>Friday</td>		
+					  <td>09.30 - 17.00</td>
+					  <td>09.30 - 17.00</td>
+					  </tr>
+					  <tr style="background-color:#d3e9ef;text-align:center; ">
+					  <td>Saturday</td>		
+					  <td>09.30 - 13.00</td>
+					  <td>Closed</td>
+					  </tr>
+							</table>
+					  </div>
+					  </p>
+				</div>
+				<p>
+					<img src="footer.jpg" name="foot" width="966" height="100" /><br>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

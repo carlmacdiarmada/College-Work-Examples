@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<html>
+<head>
+	<link rel="Stylesheet" type="text/css" href="header.css">
+</head>
+
+<body>
+	<div id="MainWrapper"> <!--Main Page Wrapper, Everything in encapsulated in this-->
+		<div id="HeaderWrapper">
+				<div id="Header"> <!--  CONTAINER -->
+					<div id="LogoDiv"> <!-- DIT LOGO IMAGE LINK -->
+						<a href="http://www.dit.ie">
+							<img id="DITLogo" src="DITLOGO.png"> </img>
+						</a>
+					</div> <!--End of LogoDiv-->
+					<div id="LinkWrapper">
+						<div id="TopLinksWrapper">
+							<table id="TopLinks"background="DITNAVBAR.png">
+								<tr>
+									<td id="FirstCell">
+										<li><span><a href="http://www.dit.ie">Home</a></span></li>
+									</td>
+									<td>
+										<li><span><a href="http://www.dit.ie/about">About DIT</a></span></li>
+									</td>
+									<td >
+										<li><span><a href="http://www.dit.ie/tools/locations">Find DIT</a></span></li>
+									</td>
+									<td>
+										<li><span><a href="http://www.dit.ie/news">News & Events</a></span></li>
+									</td>
+									<td>
+										<li><span><a href="http://www.dit.ie/tools/contacts">Staff Contacts</a></span></li>
+									</td>
+									<td>
+										<li><span><a href="http://www.dit.ie/tools/map">Sitemap</a></span></li>
+									</td>
+									<td>
+										<li><span><a href="http://www.dit.ie/tools/help">Help</a></span></li>
+									</td>
+									<td>
+										<li><span><a href="http://www.dit.ie/tools/disclaimer/privacy">Privacy Statement</a></span></li>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div id="SearchBarWrapper">
+							<a href="http://www.dit.ie">
+								<img id="LogoText" src="DITLOGONAME.png"></img>
+							</a>
+							<div id="SearchBar">
+								<form>
+									<table id="SearchTable">
+										<tr>
+											<td colspan="2">
+												<select id="SelectInput" name="InfoFor">
+													<option value="default" selected>Information for...</option>
+													<option value="gradNetwork">Graduate Network</option>
+													<option value="prospectiveStudents">Prospective Students</option>
+													<option value="currentStudents">Current Students</option>
+													<option value="jobApplicants">Job Applicants</option>
+													<option value="media">Media</option>
+													<option value="staff">Staff</option>
+													<option value="friendsDonors">Friends And Donors</option>
+												</select>
+											</td>
+										</tr>
+										<td>
+											<input type="text" name="search" size="15">
+										</td>
+										<td>
+											<input id="SearchSubmit" type="submit" name="submit" value="Search">
+										</td>
+									</table>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="NavBarWrapper">
+					<table id="NavBarTable" align="center">
+						<tr>
+							<td><a href = "http://www.dit.ie/study/">Study At DIT</a></td>
+							<td ><a href = "http://www.dit.ie/dita-z/">DIT A-Z</a></td>
+							<td ><a href = "http://www.dit.ie/colleges/">Colleges & Schools</a></td>
+							<td><a href = "library.html">Library</a></td>
+							<td><a href = "http://dit.ie/researchandenterprise/">Research & Enterprise</a></td>
+							<td><a href = "http://dit.ie/news/">News & Events</a></td>
+						</tr>
+					</table>
+				</div>
+		</div>
+		<br><br>
+		<div id="LeftNav">
+			<div style="text-align:center">
+				<br /><br /><hr />
+				<a style="text-decoration:none" href="search.html">Search</a><hr />
+				<a style="text-decoration:none" href="papers.html">Exam Papers</a><hr />
+				<a style="text-decoration:none" href="printing.html">Printing</a><hr />
+				<a style="text-decoration:none" href="https://ditlib.dit.ie/patroninfo.html~S0">Login</a><hr />
+				<a style="text-decoration:none" href="http://www.dit.ie/lttc/webcourseslinks/">Webcourses</a><hr />
+				<a style="text-decoration:none" href="https://mymail.dit.ie">Student Email</a><hr />
+				<a style="text-decoration:none" href="hours.html">Opening Hours</a><hr />
+			</div>
+		</div>
+		<div id="MainContent">
+			<div id="PrintHere">
+				<div id="PrintHereTitle"> Upload File to Print </div>
+				<div id="UploadFile">
+					<button type="button" id="upload-button" onclick="document.getElementById('UploadField').click();"><p> Upload A File </p></button>
+					<div id="UploadWrap">
+                        <input type="file" id="UploadField"/>
+                    </div>
+					<input id="FileSubmit" type="submit">
+				</div>
+			</div>
+			<div id="GuidesBox">
+				Frequently Asked Questions
+			</div>
+			<div id="FindPrinter">
+				<div id="FindPrinterTitle"> Find a Printer </div>
+			</div>
+		</div>
+		<div id="Footer"><img src="footer.jpg"></div>
+	</div>
+
+</body>

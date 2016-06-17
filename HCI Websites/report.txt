@@ -1,0 +1,24 @@
+Report:
+	• Introduction
+		○ Executive Summary
+		○ Goals
+		○ Purpose
+		○ Aims
+		○ Objectives
+	• Integration
+		○ Layout, consistency, mapping
+		○ data
+	• Presentation slot
+		○ Component
+		○ Usability
+		○ Principles
+		○ Specify design
+		○ Evaluate application
+		○ Document testing
+	
+	• Conclusion
+		○ Revisit the objectives from the introduction
+		○ Challenges group faced / Lessons learned
+		○ What would you do in the future
+		○ Teamwork
+		○ References

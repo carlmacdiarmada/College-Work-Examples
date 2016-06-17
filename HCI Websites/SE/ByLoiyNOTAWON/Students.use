@@ -1,0 +1,66 @@
+model Restaurant
+
+-- classes
+
+class Customer
+attributes
+	name : String
+	phoneNumber : Integer
+end
+
+class Reservation
+attributes
+	date : String
+	covers : Integer
+	time : Integer
+--operations
+	--enroll(s : Student)
+	--assign (r : Room)
+end
+
+class Table
+attributes
+	places : Integer
+	number : Integer
+end
+
+class Restaurant
+end
+
+class Booking
+attributes
+	date : String
+	covers : Integer
+	time : Integer
+end
+
+class WalkIn
+end
+
+class BookingSystem
+attributes
+	date : String
+end
+-- associations
+
+association Studies between
+	Student[1..*] role enrolled
+	Module[*] role modules
+end
+
+association Deliveredin between
+	Module[*] role modules
+	Room[1]
+end
+
+-- constraints
+
+context Module::enroll(s : Student)
+	pre NotRegistered: 
+		enrolled->excludes(s)
+	pre OlderThanSixteen: 
+		s.age>=16
+	pre LessThanRoomCap: 
+		enrolled->size() < Room.capacity
+	post NowRegistered: 
+		enrolled->includes(s)

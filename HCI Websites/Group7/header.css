@@ -1,0 +1,398 @@
+#MainWrapper
+{
+	width: 960px;
+	height: 800px;
+	font-family: Verdana;
+	background-color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	z-index:0;
+}
+
+a:link
+{
+	text-decoration:none;color:#000000;
+}
+
+a:visited
+{
+	text-decoration:none;color:#000000
+}
+
+a:hover
+{
+	text-decoration:none;color:#4682b4
+}
+
+a:active
+{
+	text-decoration:none;color:#000000
+}
+
+#HeaderWrapper
+{
+	position: relative;
+	background-color: #FFFFFF;
+	width: 960px;
+	height:180px;
+	z-index:1;
+	margin:0 auto;
+}
+
+#Header
+{
+	margin: 0 auto;
+	width:950px;
+	height: 120px;
+	margin-top: -10px;
+}
+
+#LogoDiv
+{
+	float: left;
+	height: 100%;
+	width: 110px;
+	background-color: white;
+}
+
+#DITLogo
+{
+	margin-top: 3px;
+	margin-left: -5px;
+	height: 98%;
+}
+
+#LinkWrapper
+{
+	float: left;
+	height: 100%;
+	width: 830px;
+}
+
+#TopLinksWrapper
+{
+	float: right;
+	height: 20%;
+	margin-right: -10px;
+}
+
+#TopLinks
+{
+	width: 100%;
+	height: 100%;
+	margin-top: 1px;
+	list-style-image:  url('DITBULLETPOINT.png');
+	font-size: 11px;
+}
+
+#FirstCell
+{
+	padding-left:25px;
+}
+
+#SearchBarWrapper
+{
+	float: left;
+	height: 80%;
+	width: 830px;
+}
+
+#SearchBar
+{
+	float: right;
+	margin-right: -5px;
+	height: 100%;
+	width: 200px;
+}
+
+#SearchTable
+{
+	width: 100%;
+	height: 50%;
+	margin-top: 25px;
+}
+
+#SelectInput
+{
+	width: 100%;
+	float: right;
+}
+
+#SearchSubmit
+{
+	width: 69px;
+	height: 22px;
+}
+
+#NavBarWrapper
+{
+	margin: 0 auto;
+	width: 966px;
+	height: 23px;
+	background-color: #D3E9EF;
+	margin-top: 2px;
+}
+
+#NavBarTable td
+{
+	font-size: 11px;
+	margin-right: 1px;
+	padding-left: 40px;
+}
+
+#LogoText
+{
+	position: relative;
+	top: 15%;
+	margin-left: 0px;
+}
+
+li span
+{
+	position: relative; left: -7px; 
+}
+
+
+#MainContentWrapper
+{
+	width:960px;
+	height:500px;
+	background-color:white;
+	margin:0 auto;
+}
+
+#LeftSidebar
+{
+	float:left;
+	width:150px; 
+	height:100%; 
+	border-top-left-radius: 50px; 
+	border-bottom-right-radius: 50px;
+	background-color:#d3e9ef;
+}
+
+#RightSidebar
+{
+	float:right;
+	width:150px; 
+	height:100%; 
+	border-top-right-radius: 50px; 
+	border-bottom-left-radius: 50px;
+	background-color:#d3e9ef;
+}
+
+#SideLink
+{
+	font-family:verdana;
+}
+
+#SearchTitleBar
+{
+	width:640px;
+	height:50px;
+	background-color:#000066;
+	float:right;
+	text-align:center;
+	margin-right:10px
+}
+
+#SearchTitle
+{
+	text-align:center;
+	font-family:verdana;
+	font-size:18px;
+	color:white
+
+}
+
+#SearchResults
+{
+	width:640px;
+	background-color:white;
+	float:right;
+	text-align:center;
+	margin-top:0px;
+	margin-right:10px
+}
+
+#ResultTop
+{
+	font-family:verdana;
+	color:white;
+	font-size:20px
+}
+
+#ResultTitle
+{
+	font-family:verdana;
+	color:black;
+	font-size:18px
+}
+#ResultAuthor
+{
+	font-family:verdana;
+	color:black;
+	font-size:16px
+}
+
+#ResultDesc
+{
+	font-family:verdana;
+	color:black;
+	font-size:14px
+}
+
+
+#PrintHere
+{
+	position: relative;
+	float: left;
+	background-image: url("printer.png");
+	background-repeat: no-repeat;	
+	height: 350px;
+	width: 395px;
+}
+
+#PrintHereTitle
+{
+	position: relative;
+	color: #0099cc;
+	padding-left: 10px;
+	padding-top: 10px;
+	font-size: 22px;
+}
+
+#upload-button
+{
+	width: 120px;
+}
+
+#UploadFile
+{
+	margin-left: 10px;
+	margin-top: 210px;
+	font-size: 16px;
+}
+
+#UploadWrap
+{
+	display: none;
+}
+
+#FileSubmit
+{
+	width: 112px;
+	height: 50px;
+	margin-left: 20px;
+	margin-top: 40px;
+}
+
+
+#GuidesBox
+{
+	position: relative;
+	float: left;
+	background-color: #D3E9EF;
+	height: 85px;
+	width: 395px;
+	margin-top: 365px;
+	margin-left: -395px;
+	text-align: center;
+	line-height: 85px;	
+	font-size: 22px;
+	color: #0099cc;
+}
+
+#FindPrinter
+{
+	position: relative;
+	background-image: url("findus.png");	
+	height: 450px;
+	width: 395px;
+	margin-left: 10px;
+	float: right;
+}
+
+#FindPrinterTitle
+{
+	position: relative;
+	color: #0099cc;
+	padding-left: 10px;
+	padding-top: 10px;
+	font-size: 22px;
+}
+
+#Footer
+{
+	margin-top: 50px;
+
+}
+
+
+
+#LeftNav
+{
+	position: relative;
+	width: 150px;
+	height: 450px;
+	font-size: 16px;
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	background-color:#d3e9ef;
+	margin-top: -40px;
+	z-index: 100;
+}
+
+#MainContent
+{
+	position: relative;
+	float: right;
+	background-color: #FFFFFF;
+	margin-left: 160px;
+	margin-top: -450px;
+	z-index: 100;
+}
+
+#PrintHere
+{
+	position: relative;
+	float: left;
+	background-image: url("printer.png");
+	background-repeat: no-repeat;	
+	height: 350px;
+	width: 395px;
+}
+
+#PrintHereTitle
+{
+	position: relative;
+	color: #0099cc;
+	padding-left: 10px;
+	padding-top: 10px;
+	font-size: 22px;
+}
+
+#upload-button
+{
+	width: 120px;
+}
+
+#UploadFile
+{
+	margin-left: 10px;
+	margin-top: 210px;
+	font-size: 16px;
+}
+
+#UploadWrap
+{
+	display: none;
+}
+
+#FileSubmit
+{
+	width: 112px;
+	height: 50px;
+	margin-left: 20px;
+	margin-top: 40px;
+}
